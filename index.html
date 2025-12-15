@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MS Furniture | Udyam Registered Furniture Works</title>
-  <meta name="description" content="MS Furniture – Udyam Registered Furniture Manufacturing & Works, Sirsa Haryana. Bed, Almirah, Table, Chair, Sofa – Order par banwayein.">
-  <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#333}
-    header{background:#1e3c72;color:#fff;padding:30px 15px;text-align:center}
-    nav{background:#16325c;padding:10px;text-align:center}
-    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold}
-    section{background:#fff;margin:20px;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-    h2{color:#1e3c72}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
-    .card{border:1px solid #ddd;border-radius:6px;padding:15px;text-align:center}
-    .badge{background:#e8f0fe;border-left:5px solid #1e3c72;padding:15px;margin:20px 0}
-    footer{background:#1e3c72;color:#fff;text-align:center;padding:15px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS Furniture | Udyam Registered Furniture Works</title>
+<meta name="description" content="MS Furniture – Udyam Registered Furniture Manufacturing & Works, Sirsa Haryana. Bed, Almirah, Table, Chair, Sofa – Order par banwayein.">
+
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4}
+header{background:#1e3c72;color:#fff;padding:30px;text-align:center}
+nav{background:#16325c;padding:10px;text-align:center}
+nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold}
+section{background:#fff;margin:20px;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+h2{color:#1e3c72}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.card{border:1px solid #ddd;padding:12px;text-align:center;border-radius:6px}
+.badge{background:#e8f0fe;border-left:5px solid #1e3c72;padding:15px;margin-top:10px}
+footer{background:#1e3c72;color:#fff;text-align:center;padding:15px}
+.lang{position:fixed;top:10px;right:10px}
+.lang button{margin-left:5px;padding:6px 10px;cursor:pointer}
+.call-btn{position:fixed;bottom:20px;right:20px;background:#28a745;color:#fff;padding:12px 16px;border-radius:50%;text-decoration:none;font-size:18px}
+iframe{width:100%;height:300px;border:0}
+</style>
+
+<script>
+function setLang(lang){
+document.querySelectorAll("[data-hi]").forEach(el=>{
+el.innerHTML = (lang==="hi") ? el.dataset.hi : el.dataset.en;
+});
+}
+</script>
 </head>
-<body>
+
+<body onload="setLang('hi')">
+
+<div class="lang">
+<button onclick="setLang('hi')">हिंदी</button>
+<button onclick="setLang('en')">English</button>
+</div>
+
+<a class="call-btn" href="tel:9728599601">📞</a>
 
 <header>
-  <h1>MS Furniture</h1>
-  <p>Furniture Manufacturing & Works</p>
+<h1 data-hi="MS Furniture" data-en="MS Furniture"></h1>
+<p data-hi="Furniture Manufacturing & Works" data-en="Furniture Manufacturing & Works"></p>
 </header>
 
 <nav>
-  <a href="#about">हमारे बारे में</a>
-  <a href="#work">हमारा काम</a>
-  <a href="#trust">भरोसा</a>
-  <a href="#contact">संपर्क</a>
+<a href="#about" data-hi="हमारे बारे में" data-en="About Us"></a>
+<a href="#work" data-hi="हमारा काम" data-en="Our Work"></a>
+<a href="#trust" data-hi="भरोसा" data-en="Trust"></a>
+<a href="#gallery" data-hi="गैलरी" data-en="Gallery"></a>
+<a href="#contact" data-hi="संपर्क" data-en="Contact"></a>
 </nav>
 
 <section id="about">
-  <h2>हमारे बारे में</h2>
-  <p>
-    MS Furniture एक भरोसेमंद फर्नीचर मैन्युफैक्चरिंग यूनिट है।
-    यहाँ ऑर्डर पर बेड, अलमारी, टेबल, कुर्सी, सोफा और अन्य लकड़ी का फर्नीचर बनाया जाता है।
-  </p>
+<h2 data-hi="हमारे बारे में" data-en="About Us"></h2>
+<p data-hi="MS Furniture एक भरोसेमंद फर्नीचर मैन्युफैक्चरिंग यूनिट है जहाँ ऑर्डर पर फर्नीचर बनाया जाता है।"
+data-en="MS Furniture is a trusted furniture manufacturing unit providing custom furniture on order."></p>
 </section>
 
 <section id="work">
-  <h2>हमारा काम</h2>
-  <div class="grid">
-    <div class="card">बेड</div>
-    <div class="card">अलमारी</div>
-    <div class="card">टेबल</div>
-    <div class="card">कुर्सी</div>
-    <div class="card">सोफा</div>
-    <div class="card">ऑर्डर पर फर्नीचर</div>
-  </div>
+<h2 data-hi="हमारा काम" data-en="Our Work"></h2>
+<div class="grid">
+<div class="card" data-hi="बेड" data-en="Bed"></div>
+<div class="card" data-hi="अलमारी" data-en="Almirah"></div>
+<div class="card" data-hi="टेबल" data-en="Table"></div>
+<div class="card" data-hi="कुर्सी" data-en="Chair"></div>
+<div class="card" data-hi="सोफा" data-en="Sofa"></div>
+</div>
 </section>
 
 <section id="trust">
-  <h2>भरोसा और प्रमाण</h2>
-  <div class="badge">
-    <strong>Udyam Registered Enterprise</strong><br>
-    UDYAM-HR-17-0058149<br>
-    Ministry of MSME, Government of India
-  </div>
+<h2 data-hi="भरोसा और प्रमाण" data-en="Trust & Certification"></h2>
+<div class="badge"
+data-hi="Udyam Registered Enterprise<br>Ministry of MSME, Government of India"
+data-en="Udyam Registered Enterprise<br>Ministry of MSME, Government of India">
+</div>
 </section>
 
-<section id="contact">
-  <h2>संपर्क करें</h2>
-  <p><strong>मोबाइल:</strong> 9728599601</p>
-  <p><strong>पता:</strong> Nehra Memorial Colony, Near Old Bus Stand, Nuhianwali, Odhan, Sirsa, Haryana – 125077</p>
-</section>
-
-<footer>
-  © 2025 MS Furniture | All Rights Reserved
-</footer>
-
-</body>
-</html>
+<section id="gallery">
+<h2 data-hi
